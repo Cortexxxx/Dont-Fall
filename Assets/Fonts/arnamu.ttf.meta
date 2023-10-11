@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 8bbb6b377a6e3f7478fbacbdbdd74d94
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Arian AMU
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 2054d706b2d809143b027d24c2a17227, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
