@@ -10575,6 +10575,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fade: {fileID: 1678783771}
+  colorPalettes:
+  - {fileID: 11400000, guid: 1780d0b7ff7650b42abc8cb81e1954d6, type: 2}
+  - {fileID: 11400000, guid: 749996b92a4bef3429f54fcc1a29b640, type: 2}
 --- !u!1001 &1117329341
 PrefabInstance:
   m_ObjectHideFlags: 0

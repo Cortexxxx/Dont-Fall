@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adbe547564b2e0849b7161c4457d1509, type: 3}
+  m_Name: rockyforestpalette
+  m_EditorClassIdentifier: 
+  colors:
+  - {r: 0.48627454, g: 0.6901961, b: 0.32156864, a: 1}
+  - {r: 0.16862746, g: 0.27450982, b: 0.17254902, a: 1}
+  - {r: 0.41960788, g: 0.28627452, b: 0.15686275, a: 1}

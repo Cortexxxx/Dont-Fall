@@ -37,7 +37,9 @@ public static class SaveGame
 		// Устанавливает все лвла закрытыми
 		for (int i = 0; i < levelNames.Length; i++)
 		{
-			levels.Add(levelNames[i], false);
+			levels.Add(levelNames[i] + "easy", false);
+			levels.Add(levelNames[i] + "medium", false);
+			levels.Add(levelNames[i] + "hard", false);
 			/*Debug.Log(levelNames[i]);*/
 		}
 		// Открывает стартовые уровни

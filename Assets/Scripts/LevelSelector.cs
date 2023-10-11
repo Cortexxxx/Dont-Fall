@@ -70,16 +70,16 @@ public class LevelSelector : MonoBehaviour
 	public void StartLevel(string levelDifficulty)
 	{
 		Animator fadeAnimator = Fade.Instance.fade.GetComponent<Animator>();
+		Fade.Instance.SetNewColors(currentlevelIndex);
 		fadeAnimator.SetBool("Activate", true);
 		float delay = fadeAnimator.GetCurrentAnimatorClipInfo(0)[0].clip.length;
 		StartCoroutine(FadeDelay(delay, levelDifficulty));
-
 	}
 
 	private IEnumerator FadeDelay(float delay, string levelDifficulty)
 	{
 		yield return new WaitForSeconds(delay);
-		PlayerPrefs.SetString("levelToLaunch", currentlevelName + levelDifficulty);
+		PlayerPrefs.SetString("levelToLaunch", currentlevelName);
 		PlayerPrefs.SetString("difficulty", levelDifficulty);
 		SceneManager.LoadScene("transition");
 	}

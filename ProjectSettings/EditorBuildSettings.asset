@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Resources/Scenes/Levels/rockyforesteasy.unity
+    path: Assets/Resources/Scenes/Levels/rockyforest.unity
     guid: 2a69939a114af724c8c686e2d6bf955a
   - enabled: 1
     path: Assets/Resources/Scenes/Levels/rockyforesthard.unity
@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Resources/Scenes/Levels/rockyforestmedium.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Resources/Scenes/Levels/sandyvalleyeasy.unity
+    path: Assets/Resources/Scenes/Levels/sandyvalley.unity
     guid: b24b29b15fb7ac44c824831cc6d47d7c
   - enabled: 1
     path: Assets/Resources/Scenes/Levels/sandyvalleyhard.unity
