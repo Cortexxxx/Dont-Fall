@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -5,6 +6,7 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
 	[SerializeField] private float time;
+	[SerializeField] private int delay = 5;
 	[SerializeField] private TextMeshProUGUI text;
 	[SerializeField] private Image fill;
 	[SerializeField] private float max;
@@ -13,17 +15,19 @@ public class Timer : MonoBehaviour
 	[SerializeField] private Color greenColor;
 	[SerializeField] private int[] times;
 	private bool timeOut = false;
-
+	private bool isActive = false;
 	private void Start()
 	{
 		max = times[(int)LevelManager.Instance.difficulty];
 		time = max;
+		text.text = "" + ((int)(time + 0.9f));
+		StartCoroutine(WaitForStart());
 	}
 
 	private void Update()
 	{
 		// Timer
-		if (!timeOut)
+		if (!timeOut && isActive)
 		{
 			time -= Time.deltaTime;
 			text.text = "" + ((int)(time + 0.9f));
@@ -52,5 +56,15 @@ public class Timer : MonoBehaviour
 			}
 		}
 
+	}
+	private IEnumerator WaitForStart()
+	{
+		for (int i = 0; i < delay; i++)
+		{
+			UIContainer.Instance.startGameTimer.GetComponent<TextMeshProUGUI>().text = (delay - i).ToString();
+			yield return new WaitForSeconds(1);
+		}
+		UIContainer.Instance.startGameTimer.SetActive(false);
+		isActive = true;
 	}
 }

@@ -51,13 +51,11 @@ public class LevelManager : MonoBehaviour
 
 	void OnEnable()
 	{
-		Debug.Log("OnEnable called");
 		SceneManager.sceneLoaded += OnSceneLoaded;
 	}
 
 	private void OnSceneLoaded(Scene arg0, LoadSceneMode arg1)
 	{
-		Debug.Log(SceneManager.GetActiveScene().name);
 		if (SceneManager.GetActiveScene().name == "menu")
 		{
 

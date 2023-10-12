@@ -25,6 +25,7 @@ public class Rock : MonoBehaviour
 	{
 		yield return new WaitForSeconds(time);
 		GetComponent<MeshRenderer>().enabled = true;
+		GetComponent<Animator>().enabled = true;
 		GetComponent<Collider>().enabled = true;
 		particlesSystem.Stop();
 		particlesSystem.gameObject.SetActive(false);
@@ -32,7 +33,8 @@ public class Rock : MonoBehaviour
 	}
 	public void Crash()
 	{
-
+		GetComponent<Animator>().enabled = false;
+		transform.rotation = Quaternion.identity;
 		GetComponent<MeshRenderer>().enabled = false;
 		GetComponent<Collider>().enabled = false;
 		particlesSystem.gameObject.SetActive(true);

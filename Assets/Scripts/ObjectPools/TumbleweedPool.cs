@@ -7,6 +7,7 @@ public class TumbleweedPool : Pool
 	private PoolMono<Tumbleweed> pool;
 	private void Start()
 	{
+		base.Start();
 		pool = new PoolMono<Tumbleweed>(tumbleweed, poolCount, transform);
 		pool.autoExpant = autoExpand;
 	}
@@ -14,7 +15,7 @@ public class TumbleweedPool : Pool
 	protected override void Update()
 	{
 		base.Update();
-		if (lastSpawnTime + cooldowns[(int)LevelManager.Instance.difficulty] < Time.time && isActive)
+		if (lastSpawnTime + cooldowns[(int)LevelManager.Instance.difficulty] < Time.time && isActive && isStarted)
 		{
 			lastSpawnTime = Time.time;
 			CreateTumbleweed();
@@ -22,8 +23,6 @@ public class TumbleweedPool : Pool
 		if (!isActive)
 		{
 			var tumbleweeds = pool.GetAllElements();
-			Debug.Log(name);
-
 			foreach (var tumbleweed in tumbleweeds)
 			{
 				if (tumbleweed.gameObject.activeSelf)

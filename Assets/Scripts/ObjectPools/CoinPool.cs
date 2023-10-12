@@ -7,6 +7,7 @@ public class CoinPool : Pool
 	private PoolMono<Coin> pool;
 	private void Start()
 	{
+		base.Start();
 		pool = new PoolMono<Coin>(coin, poolCount, transform);
 		pool.autoExpant = autoExpand;
 	}
@@ -14,7 +15,7 @@ public class CoinPool : Pool
 	protected override void Update()
 	{
 		base.Update();
-		if (lastSpawnTime + cooldowns[(int)LevelManager.Instance.difficulty] < Time.time && isActive)
+		if (lastSpawnTime + cooldowns[(int)LevelManager.Instance.difficulty] < Time.time && isActive && isStarted)
 		{
 			lastSpawnTime = Time.time;
 			CreateCoin();

@@ -1,16 +1,18 @@
+using System.Collections;
 using UnityEngine;
 
 public class Pool : MonoBehaviour
 {
 	[SerializeField] protected int poolCount = 10;
+	[SerializeField] protected int delay = 5;
 	[SerializeField] protected bool autoExpand = false;
 	[SerializeField] protected float[] cooldowns;
-	protected float lastSpawnTime;
+	[SerializeField] protected float lastSpawnTime;
 	protected bool isActive = true;
-
-	private void Start()
+	protected bool isStarted = false;
+	protected void Start()
 	{
-		isActive = true;
+		StartCoroutine(WaitForStart());
 	}
 
 	protected virtual void Update()
@@ -20,5 +22,10 @@ public class Pool : MonoBehaviour
 			isActive = false;
 		}
 	}
+	private IEnumerator WaitForStart()
+	{
+		yield return new WaitForSeconds(delay);
+		isStarted = true;
 
+	}
 }

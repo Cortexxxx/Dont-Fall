@@ -12,6 +12,10 @@ public class Tumbleweed : MonoBehaviour
 	{
 		rb = GetComponent<Rigidbody>();
 	}
+	private void OnEnable()
+	{
+		GetComponent<Animator>().enabled = true;
+	}
 	private void OnTriggerEnter(Collider other)
 	{
 		rb.constraints = RigidbodyConstraints.None;

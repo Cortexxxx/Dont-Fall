@@ -7,6 +7,7 @@ public class RockPool : Pool
 	private PoolMono<Rock> pool;
 	private void Start()
 	{
+		base.Start();
 		pool = new PoolMono<Rock>(rock, poolCount, transform);
 		pool.autoExpant = autoExpand;
 	}
@@ -14,7 +15,7 @@ public class RockPool : Pool
 	protected override void Update()
 	{
 		base.Update();
-		if (lastSpawnTime + cooldowns[(int)LevelManager.Instance.difficulty] < Time.time && isActive)
+		if (lastSpawnTime + cooldowns[(int)LevelManager.Instance.difficulty] < Time.time && isActive && isStarted)
 		{
 			lastSpawnTime = Time.time;
 			CreateRock();

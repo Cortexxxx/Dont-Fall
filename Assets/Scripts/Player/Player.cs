@@ -38,7 +38,6 @@ public class Player : MonoBehaviour
 		{
 
 			PlayerPrefs.SetInt("Coins", value);
-			Debug.Log(PlayerPrefs.GetInt("Coins") + " - Saved coins");
 			UIContainer.Instance.coinText.GetComponent<TextMeshProUGUI>().text = value.ToString();
 			coins = value;
 		}
@@ -52,16 +51,16 @@ public class Player : MonoBehaviour
 		ParticleSystem.Play();
 		Destroy(gameObject, 1);
 	}
-
 	private void OnTriggerEnter(Collider other)
 	{
 		if (other.GetComponentInParent<Portal>())
 		{
-			int xpForLevel = ((int)LevelManager.Instance.difficulty + 1) * (LevelSelector.levels.FindFirstKeyByValue(LevelSelector.currentlevelName) + 1) * 10 + Coins;
-			PlayerPrefs.SetInt("xp", PlayerPrefs.GetInt("xp") + xpForLevel);
-			SceneManager.LoadScene("menu");
+			GetComponent<PlayerMovement>().enabled = false;
+			GetComponent<Animator>().SetBool("isWalking", false);
+			other.GetComponentInParent<Portal>().FinishLevel();
 		}
 	}
+
 	private void OnCollisionEnter(Collision collision)
 	{
 		Debug.Log("Player colide");

@@ -25,7 +25,6 @@ public class Experience : MonoBehaviour
 			PlayerPrefs.SetInt("level", 0);
 		}
 		int xp = PlayerPrefs.GetInt("xp");
-		Debug.Log(Player.Instance);
 		levelText.text = Player.GetLevel(PlayerPrefs.GetInt("xp")).ToString();
 		int xpForNextLevel = GetXP(Player.GetLevel(PlayerPrefs.GetInt("xp")) + 1);
 		int xpForPreviousLevel = GetXP(Player.GetLevel(PlayerPrefs.GetInt("xp")));
