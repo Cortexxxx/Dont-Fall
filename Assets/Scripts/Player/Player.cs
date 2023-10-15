@@ -63,7 +63,6 @@ public class Player : MonoBehaviour
 
 	private void OnCollisionEnter(Collision collision)
 	{
-		Debug.Log("Player colide");
 		if (collision.collider.GetComponent<Coin>())
 		{
 			collision.collider.GetComponent<Coin>().Collect();

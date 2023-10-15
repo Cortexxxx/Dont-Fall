@@ -26,7 +26,25 @@ public class CoinPool : Pool
 	{
 		// sideLength = Width of the scene devided 2. It is the area where objects can spawn
 		float sideLength = LevelManager.Instance.platformSizes[(int)LevelManager.Instance.difficulty].x / 2;
-		Vector3 spawnPosition = new Vector3(Random.Range(-sideLength, sideLength), 15, Random.Range(-sideLength, sideLength));
+		Vector3 spawnPosition;
+		while (true)
+		{
+			spawnPosition = new Vector3(Random.Range(-sideLength, sideLength), 15, Random.Range(-sideLength, sideLength));
+			RaycastHit hit;
+			Ray ray = new Ray(spawnPosition, Vector3.down * 20);
+			Physics.Raycast(ray, out hit);
+			Debug.Log(LayerMask.LayerToName(hit.collider.gameObject.layer));
+			Collider[] colliders = Physics.OverlapBox(hit.collider.gameObject.transform.position, new Vector3(0.5f, 0.5f, 0.5f));
+			foreach (var item in colliders)
+			{
+				if (LayerMask.LayerToName(item.gameObject.layer) == "NoCoins")
+				{
+					continue;
+				}
+			}
+			break;
+		}
+
 		var coin = pool.GetFreeElement();
 		coin.transform.position = spawnPosition;
 	}

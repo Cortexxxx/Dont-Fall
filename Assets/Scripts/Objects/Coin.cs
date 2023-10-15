@@ -46,4 +46,7 @@ public class Coin : MonoBehaviour
 		particlesSystem.Play();
 		StartCoroutine(SetInactiveAfter(1));
 	}
+	private void Update()
+	{
+	}
 }

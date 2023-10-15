@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wheel-wood
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013451788436, guid: bec9726b8eaf54d9eb3f25cb70fc3b88, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012650475178, guid: bec9726b8eaf54d9eb3f25cb70fc3b88, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -199,6 +203,22 @@ PrefabInstance:
     - target: {fileID: 1000010995239334, guid: 4cfcfa71c7c84452bb08b50da0ecaa83, type: 3}
       propertyPath: m_Name
       value: windmill-western
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010995239334, guid: 4cfcfa71c7c84452bb08b50da0ecaa83, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1389031451173898, guid: 4cfcfa71c7c84452bb08b50da0ecaa83, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907228119143594, guid: 4cfcfa71c7c84452bb08b50da0ecaa83, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1917684491157192, guid: 4cfcfa71c7c84452bb08b50da0ecaa83, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000011078730804, guid: 4cfcfa71c7c84452bb08b50da0ecaa83, type: 3}
       propertyPath: m_RootOrder
@@ -266,6 +286,10 @@ PrefabInstance:
     - target: {fileID: 1224550385178844, guid: 1ed82242ee4ea44a5bf1ba69defa1e46, type: 3}
       propertyPath: m_Name
       value: crate-box-traingle (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1224550385178844, guid: 1ed82242ee4ea44a5bf1ba69defa1e46, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4276395724719890, guid: 1ed82242ee4ea44a5bf1ba69defa1e46, type: 3}
       propertyPath: m_RootOrder
@@ -408,6 +432,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground-cracked_sand (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010225753976, guid: 91611d76ebbaef8418b94fa887295363, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011990257666, guid: 91611d76ebbaef8418b94fa887295363, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -489,6 +517,10 @@ PrefabInstance:
     - target: {fileID: 1967143229867162, guid: 576c835882f384c9c9dc6ff2f142e00a, type: 3}
       propertyPath: m_Name
       value: hat-witch
+      objectReference: {fileID: 0}
+    - target: {fileID: 1967143229867162, guid: 576c835882f384c9c9dc6ff2f142e00a, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4682698480683400, guid: 576c835882f384c9c9dc6ff2f142e00a, type: 3}
       propertyPath: m_RootOrder
@@ -694,9 +726,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 960095019}
     m_Modifications:
+    - target: {fileID: 1000012200769480, guid: ee8b582e8f62b4b95bf43dbcfbba3aa1, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012502742792, guid: ee8b582e8f62b4b95bf43dbcfbba3aa1, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1000014059375746, guid: ee8b582e8f62b4b95bf43dbcfbba3aa1, type: 3}
       propertyPath: m_Name
       value: horse-wagon
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014059375746, guid: ee8b582e8f62b4b95bf43dbcfbba3aa1, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1575415902098772, guid: ee8b582e8f62b4b95bf43dbcfbba3aa1, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000010757695328, guid: ee8b582e8f62b4b95bf43dbcfbba3aa1, type: 3}
       propertyPath: m_RootOrder
@@ -974,6 +1022,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: horse-rest
       objectReference: {fileID: 0}
+    - target: {fileID: 1644517415283858, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4492493930045196, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -1122,6 +1174,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground-cracked_sand (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010225753976, guid: 91611d76ebbaef8418b94fa887295363, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011990257666, guid: 91611d76ebbaef8418b94fa887295363, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -1234,7 +1290,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 441407906}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.42, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1259,6 +1315,10 @@ PrefabInstance:
     - target: {fileID: 1000010225753976, guid: 91611d76ebbaef8418b94fa887295363, type: 3}
       propertyPath: m_Name
       value: ground-cracked_sand (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010225753976, guid: 91611d76ebbaef8418b94fa887295363, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000011990257666, guid: 91611d76ebbaef8418b94fa887295363, type: 3}
       propertyPath: m_RootOrder
@@ -1428,6 +1488,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: dryer
       objectReference: {fileID: 0}
+    - target: {fileID: 1000012271056116, guid: 924970bfe2c944f4ab65a7a48c9386cc, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013275697272, guid: 924970bfe2c944f4ab65a7a48c9386cc, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -1538,6 +1602,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: horse-rest (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1644517415283858, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4492493930045196, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -1600,9 +1668,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 960095019}
     m_Modifications:
+    - target: {fileID: 1368975042262672, guid: a079eb9cc8d5c4cbf9fcf4591c43283d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1420165543754310, guid: a079eb9cc8d5c4cbf9fcf4591c43283d, type: 3}
       propertyPath: m_Name
       value: coffin-wood
+      objectReference: {fileID: 0}
+    - target: {fileID: 1420165543754310, guid: a079eb9cc8d5c4cbf9fcf4591c43283d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671578235545962, guid: a079eb9cc8d5c4cbf9fcf4591c43283d, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4573927449962724, guid: a079eb9cc8d5c4cbf9fcf4591c43283d, type: 3}
       propertyPath: m_RootOrder
@@ -1771,6 +1851,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: horse-rest (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1644517415283858, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4492493930045196, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -1836,6 +1920,10 @@ PrefabInstance:
     - target: {fileID: 1000010225753976, guid: 91611d76ebbaef8418b94fa887295363, type: 3}
       propertyPath: m_Name
       value: ground-cracked_sand (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010225753976, guid: 91611d76ebbaef8418b94fa887295363, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000011990257666, guid: 91611d76ebbaef8418b94fa887295363, type: 3}
       propertyPath: m_RootOrder
@@ -1919,6 +2007,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: dryer
       objectReference: {fileID: 0}
+    - target: {fileID: 1000012271056116, guid: 924970bfe2c944f4ab65a7a48c9386cc, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013275697272, guid: 924970bfe2c944f4ab65a7a48c9386cc, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -1984,6 +2076,10 @@ PrefabInstance:
     - target: {fileID: 1000010225753976, guid: 91611d76ebbaef8418b94fa887295363, type: 3}
       propertyPath: m_Name
       value: ground-cracked_sand (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010225753976, guid: 91611d76ebbaef8418b94fa887295363, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000011990257666, guid: 91611d76ebbaef8418b94fa887295363, type: 3}
       propertyPath: m_RootOrder
@@ -2129,6 +2225,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: horse-rest (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1644517415283858, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4492493930045196, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -2195,6 +2295,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground-cracked_sand (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010225753976, guid: 91611d76ebbaef8418b94fa887295363, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011990257666, guid: 91611d76ebbaef8418b94fa887295363, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -2257,6 +2361,10 @@ PrefabInstance:
     - target: {fileID: 1644517415283858, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
       propertyPath: m_Name
       value: horse-rest (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1644517415283858, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4492493930045196, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
       propertyPath: m_RootOrder
@@ -2324,6 +2432,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cross-wood (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013783810456, guid: 18f499c59234f234f9813b8580d75523, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010070082586, guid: 18f499c59234f234f9813b8580d75523, type: 3}
       propertyPath: m_RootOrder
       value: 35
@@ -2389,6 +2501,10 @@ PrefabInstance:
     - target: {fileID: 1424364054453030, guid: 15c49ac9d1212474799d922db82e6e64, type: 3}
       propertyPath: m_Name
       value: bench-broken-wood
+      objectReference: {fileID: 0}
+    - target: {fileID: 1424364054453030, guid: 15c49ac9d1212474799d922db82e6e64, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4672550493462412, guid: 15c49ac9d1212474799d922db82e6e64, type: 3}
       propertyPath: m_RootOrder
@@ -2588,6 +2704,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wheel-wood
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013451788436, guid: bec9726b8eaf54d9eb3f25cb70fc3b88, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012650475178, guid: bec9726b8eaf54d9eb3f25cb70fc3b88, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -2653,6 +2773,10 @@ PrefabInstance:
     - target: {fileID: 1289123257484246, guid: 01ccbdfe73fdf47a2878af8036c2cd13, type: 3}
       propertyPath: m_Name
       value: canoe
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289123257484246, guid: 01ccbdfe73fdf47a2878af8036c2cd13, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4690536045334774, guid: 01ccbdfe73fdf47a2878af8036c2cd13, type: 3}
       propertyPath: m_RootOrder
@@ -2882,6 +3006,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground-cracked_sand (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010225753976, guid: 91611d76ebbaef8418b94fa887295363, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011990257666, guid: 91611d76ebbaef8418b94fa887295363, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -3030,6 +3158,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: horse-rest (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1644517415283858, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4492493930045196, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -3162,6 +3294,22 @@ PrefabInstance:
     - target: {fileID: 1000010995239334, guid: 4cfcfa71c7c84452bb08b50da0ecaa83, type: 3}
       propertyPath: m_Name
       value: windmill-western
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010995239334, guid: 4cfcfa71c7c84452bb08b50da0ecaa83, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1389031451173898, guid: 4cfcfa71c7c84452bb08b50da0ecaa83, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1907228119143594, guid: 4cfcfa71c7c84452bb08b50da0ecaa83, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1917684491157192, guid: 4cfcfa71c7c84452bb08b50da0ecaa83, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000011078730804, guid: 4cfcfa71c7c84452bb08b50da0ecaa83, type: 3}
       propertyPath: m_RootOrder
@@ -3445,6 +3593,10 @@ PrefabInstance:
     - target: {fileID: 1644517415283858, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
       propertyPath: m_Name
       value: horse-rest
+      objectReference: {fileID: 0}
+    - target: {fileID: 1644517415283858, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4492493930045196, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
       propertyPath: m_RootOrder
@@ -3741,6 +3893,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: crate-box-traingle
       objectReference: {fileID: 0}
+    - target: {fileID: 1224550385178844, guid: 1ed82242ee4ea44a5bf1ba69defa1e46, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4276395724719890, guid: 1ed82242ee4ea44a5bf1ba69defa1e46, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -3865,6 +4021,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: horse-rest (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1644517415283858, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4492493930045196, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -3931,6 +4091,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: horse-rest (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1644517415283858, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4492493930045196, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -3996,6 +4160,10 @@ PrefabInstance:
     - target: {fileID: 1000013783810456, guid: 18f499c59234f234f9813b8580d75523, type: 3}
       propertyPath: m_Name
       value: cross-wood (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013783810456, guid: 18f499c59234f234f9813b8580d75523, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000010070082586, guid: 18f499c59234f234f9813b8580d75523, type: 3}
       propertyPath: m_RootOrder
@@ -4068,6 +4236,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: horse-rest (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1644517415283858, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4492493930045196, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -4133,6 +4305,10 @@ PrefabInstance:
     - target: {fileID: 1000010225753976, guid: 91611d76ebbaef8418b94fa887295363, type: 3}
       propertyPath: m_Name
       value: ground-cracked_sand (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010225753976, guid: 91611d76ebbaef8418b94fa887295363, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000011990257666, guid: 91611d76ebbaef8418b94fa887295363, type: 3}
       propertyPath: m_RootOrder
@@ -4216,6 +4392,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground-cracked_sand (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010225753976, guid: 91611d76ebbaef8418b94fa887295363, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011990257666, guid: 91611d76ebbaef8418b94fa887295363, type: 3}
       propertyPath: m_RootOrder
       value: 34
@@ -4297,6 +4477,10 @@ PrefabInstance:
     - target: {fileID: 1000010225753976, guid: 91611d76ebbaef8418b94fa887295363, type: 3}
       propertyPath: m_Name
       value: ground-cracked_sand
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010225753976, guid: 91611d76ebbaef8418b94fa887295363, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000011990257666, guid: 91611d76ebbaef8418b94fa887295363, type: 3}
       propertyPath: m_RootOrder
@@ -4442,9 +4626,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1863316986}
     m_Modifications:
+    - target: {fileID: 1000012200769480, guid: ee8b582e8f62b4b95bf43dbcfbba3aa1, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012502742792, guid: ee8b582e8f62b4b95bf43dbcfbba3aa1, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1000014059375746, guid: ee8b582e8f62b4b95bf43dbcfbba3aa1, type: 3}
       propertyPath: m_Name
       value: horse-wagon
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014059375746, guid: ee8b582e8f62b4b95bf43dbcfbba3aa1, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1575415902098772, guid: ee8b582e8f62b4b95bf43dbcfbba3aa1, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000010757695328, guid: ee8b582e8f62b4b95bf43dbcfbba3aa1, type: 3}
       propertyPath: m_RootOrder
@@ -4597,9 +4797,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 960095019}
     m_Modifications:
+    - target: {fileID: 1368975042262672, guid: a079eb9cc8d5c4cbf9fcf4591c43283d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1420165543754310, guid: a079eb9cc8d5c4cbf9fcf4591c43283d, type: 3}
       propertyPath: m_Name
       value: coffin-wood (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1420165543754310, guid: a079eb9cc8d5c4cbf9fcf4591c43283d, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1671578235545962, guid: a079eb9cc8d5c4cbf9fcf4591c43283d, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4573927449962724, guid: a079eb9cc8d5c4cbf9fcf4591c43283d, type: 3}
       propertyPath: m_RootOrder
@@ -4671,6 +4883,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: dryer
       objectReference: {fileID: 0}
+    - target: {fileID: 1000012271056116, guid: 924970bfe2c944f4ab65a7a48c9386cc, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013275697272, guid: 924970bfe2c944f4ab65a7a48c9386cc, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -4736,6 +4952,10 @@ PrefabInstance:
     - target: {fileID: 1644517415283858, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
       propertyPath: m_Name
       value: horse-rest (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1644517415283858, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4492493930045196, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
       propertyPath: m_RootOrder
@@ -4807,6 +5027,10 @@ PrefabInstance:
     - target: {fileID: 1644517415283858, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
       propertyPath: m_Name
       value: horse-rest (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1644517415283858, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4492493930045196, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
       propertyPath: m_RootOrder
@@ -5115,6 +5339,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: horse-rest (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1644517415283858, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4492493930045196, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -5180,6 +5408,10 @@ PrefabInstance:
     - target: {fileID: 1000010225753976, guid: 91611d76ebbaef8418b94fa887295363, type: 3}
       propertyPath: m_Name
       value: ground-cracked_sand
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010225753976, guid: 91611d76ebbaef8418b94fa887295363, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000011990257666, guid: 91611d76ebbaef8418b94fa887295363, type: 3}
       propertyPath: m_RootOrder
@@ -5257,6 +5489,10 @@ PrefabInstance:
     - target: {fileID: 1000013783810456, guid: 18f499c59234f234f9813b8580d75523, type: 3}
       propertyPath: m_Name
       value: cross-wood
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013783810456, guid: 18f499c59234f234f9813b8580d75523, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000010070082586, guid: 18f499c59234f234f9813b8580d75523, type: 3}
       propertyPath: m_RootOrder
@@ -5408,6 +5644,10 @@ PrefabInstance:
     - target: {fileID: 1000010225753976, guid: 91611d76ebbaef8418b94fa887295363, type: 3}
       propertyPath: m_Name
       value: ground-cracked_sand (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010225753976, guid: 91611d76ebbaef8418b94fa887295363, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000011990257666, guid: 91611d76ebbaef8418b94fa887295363, type: 3}
       propertyPath: m_RootOrder
@@ -5600,6 +5840,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: horse-rest (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1644517415283858, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4492493930045196, guid: 7e75cb804980a4d96be574092277be0f, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -5745,7 +5989,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2120570452}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.35170698, y: 0.39143443, z: 0.102892876}
+  m_LocalPosition: {x: -0.35170698, y: 0, z: 0.102892876}
   m_LocalScale: {x: 25, y: 0.62484, z: 25}
   m_ConstrainProportionsScale: 0
   m_Children: []

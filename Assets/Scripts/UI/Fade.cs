@@ -23,7 +23,8 @@ public class Fade : MonoBehaviour
 	}
 	private void SetFadeState(Scene scene, LoadSceneMode mode)
 	{
-		if (fade.GetComponent<Animator>().GetBool("Activate") && SceneManager.GetActiveScene().name != "menu")
+		if (!fade) return;
+        if (SceneManager.GetActiveScene().name != "menu" && fade.GetComponent<Animator>().GetBool("Activate"))
 		{
 			fade.GetComponent<Animator>().SetBool("Activate", false);
 		}

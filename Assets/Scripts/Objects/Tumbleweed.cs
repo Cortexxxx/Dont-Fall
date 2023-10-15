@@ -48,7 +48,7 @@ public class Tumbleweed : MonoBehaviour
 
 	public void Crash()
 	{
-		rb.constraints = RigidbodyConstraints.FreezeRotation;
+		rb.constraints = RigidbodyConstraints.FreezeAll;
 		GetComponent<Animator>().enabled = false;
 		GetComponentInChildren<MeshRenderer>().enabled = false;
 		GetComponent<Collider>().enabled = false;
