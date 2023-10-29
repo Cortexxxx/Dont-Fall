@@ -37,6 +37,7 @@ public class ChooseButton : MonoBehaviour
 
 	private void Update()
 	{
+		Debug.Log(Application.persistentDataPath);
 		if (LevelSelector.currentlevelName != null)
 		{
 			Refresh();

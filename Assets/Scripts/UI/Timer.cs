@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
 	[SerializeField] private float time;
-	[SerializeField] private int delay = 5;
 	[SerializeField] private TextMeshProUGUI text;
 	[SerializeField] private Image fill;
 	[SerializeField] private float max;
@@ -14,6 +13,7 @@ public class Timer : MonoBehaviour
 	[SerializeField] private Color redColor;
 	[SerializeField] private Color greenColor;
 	[SerializeField] private int[] times;
+	public int delay = 5;
 	private bool timeOut = false;
 	private bool isActive = false;
 	private void Start()

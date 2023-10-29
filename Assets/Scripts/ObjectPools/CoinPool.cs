@@ -5,7 +5,7 @@ public class CoinPool : Pool
 	[SerializeField] private Coin coin;
 
 	private PoolMono<Coin> pool;
-	private void Start()
+	protected override void Start()
 	{
 		base.Start();
 		pool = new PoolMono<Coin>(coin, poolCount, transform);
@@ -33,7 +33,6 @@ public class CoinPool : Pool
 			RaycastHit hit;
 			Ray ray = new Ray(spawnPosition, Vector3.down * 20);
 			Physics.Raycast(ray, out hit);
-			Debug.Log(LayerMask.LayerToName(hit.collider.gameObject.layer));
 			Collider[] colliders = Physics.OverlapBox(hit.collider.gameObject.transform.position, new Vector3(0.5f, 0.5f, 0.5f));
 			foreach (var item in colliders)
 			{

@@ -13,7 +13,8 @@ public class LevelSelector : MonoBehaviour
 	public static Dictionary<int, string> levels = new Dictionary<int, string>()
 	{
 		{0, "rockyforest"},
-		{1, "sandyvalley"}
+		{1, "sandyvalley"},
+		{2, "lavaland"}
 	};
 	private void Start()
 	{

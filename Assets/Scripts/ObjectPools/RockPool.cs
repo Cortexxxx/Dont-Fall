@@ -5,7 +5,7 @@ public class RockPool : Pool
 	[SerializeField] private Rock rock;
 
 	private PoolMono<Rock> pool;
-	private void Start()
+	protected override void Start()
 	{
 		base.Start();
 		pool = new PoolMono<Rock>(rock, poolCount, transform);

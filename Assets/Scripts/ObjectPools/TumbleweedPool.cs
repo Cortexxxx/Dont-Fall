@@ -5,7 +5,7 @@ public class TumbleweedPool : Pool
 	[SerializeField] private Tumbleweed tumbleweed;
 
 	private PoolMono<Tumbleweed> pool;
-	private void Start()
+	protected override void Start()
 	{
 		base.Start();
 		pool = new PoolMono<Tumbleweed>(tumbleweed, poolCount, transform);

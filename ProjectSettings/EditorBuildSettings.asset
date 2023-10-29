@@ -9,20 +9,11 @@ EditorBuildSettings:
     path: Assets/Resources/Scenes/Levels/rockyforest.unity
     guid: 2a69939a114af724c8c686e2d6bf955a
   - enabled: 1
-    path: Assets/Resources/Scenes/Levels/rockyforesthard.unity
-    guid: ad8e1d6a2fe733a43973faab252d8e08
-  - enabled: 1
-    path: Assets/Resources/Scenes/Levels/rockyforestmedium.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
     path: Assets/Resources/Scenes/Levels/sandyvalley.unity
     guid: b24b29b15fb7ac44c824831cc6d47d7c
   - enabled: 1
-    path: Assets/Resources/Scenes/Levels/sandyvalleyhard.unity
-    guid: aec6df0cca82f1c4aabbffb672b93c64
-  - enabled: 1
-    path: Assets/Resources/Scenes/Levels/sandyvalleymedium.unity
-    guid: d9e841250b2e2d347bad023fd66ecf24
+    path: Assets/Resources/Scenes/Levels/lavaland.unity
+    guid: d21371d9754f0fa46bca66926dcfc95d
   - enabled: 1
     path: Assets/Resources/Scenes/menu.unity
     guid: f39f352cfd0a2f140a24a810b6a7cdba

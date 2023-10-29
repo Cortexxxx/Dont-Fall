@@ -341,6 +341,7 @@ GameObject:
   - component: {fileID: 140223460}
   - component: {fileID: 140223459}
   - component: {fileID: 140223463}
+  - component: {fileID: 140223464}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -440,7 +441,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 140223458}
-  m_LocalRotation: {x: 0.29891944, y: 0.000000032839356, z: -0.000000010286643, w: 0.95427835}
+  m_LocalRotation: {x: 0.29891944, y: -0.00000003283936, z: 0.000000010286644, w: 0.95427835}
   m_LocalPosition: {x: -1.9798629, y: 15, z: -22.850605}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -508,6 +509,20 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!114 &140223464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140223458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e408dab3c25dc7e4980bc25deadc6429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  netherBackgroundColor: {r: 0.1981132, g: 0.038314342, b: 0.061718874, a: 1}
+  skyBackgroundColor: {r: 0.5921569, g: 0.75686276, b: 0.8, a: 1}
 --- !u!1 &237903181
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,7 +868,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 407882563}
-  m_LocalRotation: {x: 0.29891938, y: 0.000000016419676, z: -0.000000005143321, w: 0.9542784}
+  m_LocalRotation: {x: 0.29891938, y: -0.00000001641968, z: 0.000000005143322, w: 0.9542784}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1097,7 +1112,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983359581}
-  m_LocalRotation: {x: 0.31622773, y: 6.5584876e-15, z: -3.3704004e-15, w: 0.9486833}
+  m_LocalRotation: {x: 0.31622776, y: -0.000000028272963, z: 0.000000009424321, w: 0.9486833}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1487,6 +1502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coinText: {fileID: 1139967441}
   startGameTimer: {fileID: 1882693666}
+  timer: {fileID: 1544414025}
 --- !u!1 &1251478883
 GameObject:
   m_ObjectHideFlags: 0
@@ -2213,7 +2229,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 10
-  delay: 5
   text: {fileID: 1531310491}
   fill: {fileID: 673506260}
   max: 5
@@ -2221,6 +2236,7 @@ MonoBehaviour:
   redColor: {r: 1, g: 0.23529412, b: 0.10980392, a: 1}
   greenColor: {r: 0.58431375, g: 1, b: 0.10980392, a: 1}
   times: 0f0000000f0000000f000000
+  delay: 5
 --- !u!1 &1882693666
 GameObject:
   m_ObjectHideFlags: 0

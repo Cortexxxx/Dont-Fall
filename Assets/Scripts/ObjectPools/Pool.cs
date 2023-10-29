@@ -10,7 +10,7 @@ public class Pool : MonoBehaviour
 	[SerializeField] protected float lastSpawnTime;
 	protected bool isActive = true;
 	protected bool isStarted = false;
-	protected void Start()
+	protected virtual void Start()
 	{
 		StartCoroutine(WaitForStart());
 	}

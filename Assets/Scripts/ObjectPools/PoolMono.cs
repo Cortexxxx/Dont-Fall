@@ -14,7 +14,6 @@ public class PoolMono<T> where T : MonoBehaviour
 		this.prefab = prefab;
 		container = transform;
 		CreatePool(count);
-
 	}
 
 	private void CreatePool(int count)
