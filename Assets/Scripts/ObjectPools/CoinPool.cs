@@ -3,7 +3,6 @@ using UnityEngine;
 public class CoinPool : Pool
 {
 	[SerializeField] private Coin coin;
-
 	private PoolMono<Coin> pool;
 	protected override void Start()
 	{
@@ -11,18 +10,7 @@ public class CoinPool : Pool
 		pool = new PoolMono<Coin>(coin, poolCount, transform);
 		pool.autoExpant = autoExpand;
 	}
-
-	protected override void Update()
-	{
-		base.Update();
-		if (lastSpawnTime + cooldowns[(int)LevelManager.Instance.difficulty] < Time.time && isActive && isStarted)
-		{
-			lastSpawnTime = Time.time;
-			CreateCoin();
-		}
-
-	}
-	private void CreateCoin()
+	protected override void CreateObject()
 	{
 		// sideLength = Width of the scene devided 2. It is the area where objects can spawn
 		float sideLength = LevelManager.Instance.platformSizes[(int)LevelManager.Instance.difficulty].x / 2;
@@ -33,17 +21,19 @@ public class CoinPool : Pool
 			RaycastHit hit;
 			Ray ray = new Ray(spawnPosition, Vector3.down * 20);
 			Physics.Raycast(ray, out hit);
-			Collider[] colliders = Physics.OverlapBox(hit.collider.gameObject.transform.position, new Vector3(0.5f, 0.5f, 0.5f));
-			foreach (var item in colliders)
+			if (hit.collider != null)
 			{
-				if (LayerMask.LayerToName(item.gameObject.layer) == "NoCoins")
+				Collider[] colliders = Physics.OverlapBox(hit.collider.gameObject.transform.position, new Vector3(0.5f, 0.5f, 0.5f));
+				foreach (var item in colliders)
 				{
-					continue;
+					if (LayerMask.LayerToName(item.gameObject.layer) == "NoCoins")
+					{
+						continue;
+					}
 				}
 			}
 			break;
 		}
-
 		var coin = pool.GetFreeElement();
 		coin.transform.position = spawnPosition;
 	}

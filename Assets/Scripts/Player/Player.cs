@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class Player : MonoBehaviour
 {
@@ -29,7 +30,18 @@ public class Player : MonoBehaviour
 	}
 	private void Update()
 	{
+		if (transform.position.y < -5)
+		{
+			Die();
+		}
 	}
+
+	private IEnumerator FadeDelay(float delay)
+	{
+		yield return new WaitForSeconds(delay);
+		SceneManager.LoadScene("menu");
+	}
+
 	private int coins = 0;
 	public int Coins
 	{
@@ -50,6 +62,10 @@ public class Player : MonoBehaviour
 		ParticleSystem.gameObject.SetActive(true);
 		ParticleSystem.Play();
 		Destroy(gameObject, 1);
+		Animator fadeAnimator = Fade.Instance.fade.GetComponent<Animator>();
+		fadeAnimator.SetBool("Activate", true);
+		float delay = fadeAnimator.GetCurrentAnimatorClipInfo(0)[0].clip.length;
+		StartCoroutine(FadeDelay(delay));
 	}
 	private void OnTriggerEnter(Collider other)
 	{

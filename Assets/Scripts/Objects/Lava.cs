@@ -1,16 +1,14 @@
 using System.Collections;
 using UnityEngine;
 
-public class Lava : MonoBehaviour
+public class Lava : PoolObject
 {
 	private Rigidbody rb;
 	[SerializeField] private GameObject prefab;
-	[SerializeField] private ParticleSystem particlesSystem;
 	[SerializeField] private int defaultSize;
 	public int force;
-	private bool isChild = false;
 
-	private void Start()
+	protected override void Start()
 	{
 		rb = GetComponent<Rigidbody>();
 	}
@@ -18,17 +16,15 @@ public class Lava : MonoBehaviour
 	{
 		GetComponent<Animator>().enabled = true;
 	}
-	private void OnCollisionEnter(Collision collision)
+	protected override void OnCollisionEnter(Collision collision)
 	{
+		base.OnCollisionEnter(collision);
 		if (collision.collider.GetComponent<Player>())
 		{
-			Player.Instance.Die();
 			rb.constraints = RigidbodyConstraints.FreezeAll;
-			Crash();
 		}
 		if (transform.localScale.x == defaultSize)
 		{
-			isChild = true;
 			for (int i = 0; i < 8; i++)
 			{
 				GameObject lavaSmall = Instantiate(prefab, gameObject.transform.position, Quaternion.identity);
@@ -71,27 +67,5 @@ public class Lava : MonoBehaviour
 			rb.constraints = RigidbodyConstraints.FreezeAll;
 		}
 	}
-	private IEnumerator SetInactiveAfter(float time)
-	{
-		yield return new WaitForSeconds(time);
-		GetComponentInChildren<MeshRenderer>().enabled = true;
-		GetComponent<Collider>().enabled = true;
-		particlesSystem.Stop();
-		particlesSystem.gameObject.SetActive(false);
-		rb.constraints = RigidbodyConstraints.None;
-		GetComponent<Animator>().enabled = true;
-		gameObject.SetActive(false);
 
-	}
-
-	public void Crash()
-	{
-		rb.constraints = RigidbodyConstraints.FreezeAll;
-		GetComponent<Animator>().enabled = false;
-		GetComponentInChildren<MeshRenderer>().enabled = false;
-		GetComponent<Collider>().enabled = false;
-		particlesSystem.gameObject.SetActive(true);
-		particlesSystem.Play();
-		StartCoroutine(SetInactiveAfter(1));
-	}
 }

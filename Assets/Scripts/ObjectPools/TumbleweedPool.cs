@@ -15,11 +15,7 @@ public class TumbleweedPool : Pool
 	protected override void Update()
 	{
 		base.Update();
-		if (lastSpawnTime + cooldowns[(int)LevelManager.Instance.difficulty] < Time.time && isActive && isStarted)
-		{
-			lastSpawnTime = Time.time;
-			CreateTumbleweed();
-		}
+
 		if (!isActive)
 		{
 			var tumbleweeds = pool.GetAllElements();
@@ -33,7 +29,8 @@ public class TumbleweedPool : Pool
 			enabled = false;
 		}
 	}
-	private void CreateTumbleweed()
+
+	protected override void CreateObject()
 	{
 		// sideLength = Width of the scene devided 2. It is the area where objects can spawn
 		var tumbleweed = pool.GetFreeElement();
@@ -46,7 +43,7 @@ public class TumbleweedPool : Pool
 		switch (side)
 		{
 			case 1:
-				spawnPosition = new Vector3(platformSize.x,2, Random.Range(-platformSize.x / 2, platformSize.x / 2));
+				spawnPosition = new Vector3(platformSize.x, 2, Random.Range(-platformSize.x / 2, platformSize.x / 2));
 				forceDirection = new Vector3(-tumbleweed.GetComponent<Tumbleweed>().forces[(int)LevelManager.Difficulties.Medium], 0, 0);
 				break;
 			case 2:
@@ -55,10 +52,10 @@ public class TumbleweedPool : Pool
 				break;
 			case 3:
 				spawnPosition = new Vector3(Random.Range(-platformSize.x / 2, platformSize.x / 2), 2, platformSize.x);
-				forceDirection = new Vector3(0, 0,-tumbleweed.GetComponent<Tumbleweed>().forces[(int)LevelManager.Difficulties.Medium]);
+				forceDirection = new Vector3(0, 0, -tumbleweed.GetComponent<Tumbleweed>().forces[(int)LevelManager.Difficulties.Medium]);
 				break;
 			case 4:
-				spawnPosition = new Vector3(Random.Range(-platformSize.x / 2, platformSize.x / 2), 2 , -platformSize.x);
+				spawnPosition = new Vector3(Random.Range(-platformSize.x / 2, platformSize.x / 2), 2, -platformSize.x);
 				forceDirection = new Vector3(0, 0, tumbleweed.GetComponent<Tumbleweed>().forces[(int)LevelManager.Difficulties.Medium]);
 				break;
 			default:

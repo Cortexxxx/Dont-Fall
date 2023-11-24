@@ -15,11 +15,7 @@ public class RockPool : Pool
 	protected override void Update()
 	{
 		base.Update();
-		if (lastSpawnTime + cooldowns[(int)LevelManager.Instance.difficulty] < Time.time && isActive && isStarted)
-		{
-			lastSpawnTime = Time.time;
-			CreateRock();
-		}
+
 	
 		if (!isActive)
 		{
@@ -34,7 +30,8 @@ public class RockPool : Pool
 			}
 		}
 	}
-	private void CreateRock()
+
+	protected override void CreateObject()
 	{
 		float sideLength = LevelManager.Instance.platformSizes[(int)LevelManager.Instance.difficulty].x / 2;
 		Vector3 spawnPosition = new Vector3(Random.Range(-sideLength, sideLength), 15, Random.Range(-sideLength, sideLength));

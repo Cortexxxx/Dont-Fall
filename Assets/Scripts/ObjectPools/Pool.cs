@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class Pool : MonoBehaviour
+public abstract class Pool : MonoBehaviour
 {
 	[SerializeField] protected int poolCount = 10;
 	[SerializeField] protected int delay = 5;
@@ -17,15 +17,22 @@ public class Pool : MonoBehaviour
 
 	protected virtual void Update()
 	{
+
 		if (LevelManager.Instance.isCompleted == true)
 		{
 			isActive = false;
 		}
+		if (lastSpawnTime + cooldowns[(int)LevelManager.Instance.difficulty] < Time.time && isActive && isStarted && Player.Instance)
+		{
+			lastSpawnTime = Time.time;
+			CreateObject();
+			Debug.Log("CREATION"); // Это выводится
+		}
 	}
+	abstract protected void CreateObject();
 	private IEnumerator WaitForStart()
 	{
 		yield return new WaitForSeconds(delay);
 		isStarted = true;
-
 	}
 }

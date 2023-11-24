@@ -14,12 +14,14 @@ public class LevelSelector : MonoBehaviour
 	{
 		{0, "rockyforest"},
 		{1, "sandyvalley"},
-		{2, "lavaland"}
+		{2, "lavaland"},
+		{3, "snowyhills"},
+		{4, "cityflow"}
 	};
 	private void Start()
 	{
 		currentlevelIndex = 0;
-		LevelSelector.currentlevelName = levels[currentlevelIndex];
+		currentlevelName = levels[currentlevelIndex];
 	}
 	private void OnEnable()
 	{
@@ -29,7 +31,10 @@ public class LevelSelector : MonoBehaviour
 	{
 		SaveGame.SaveLevels();
 	}
-
+	private void Update()
+	{
+		Debug.Log(Application.persistentDataPath);
+	}
 	public void SwitchLevelPage(bool isRightbuttonClicked = false)
 	{
 		levelPages[currentlevelIndex].SetActive(false);

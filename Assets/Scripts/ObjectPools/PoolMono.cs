@@ -5,13 +5,19 @@ using UnityEngine;
 public class PoolMono<T> where T : MonoBehaviour
 {
 	public T prefab { get; }
+	private T[] prefabs { get; }
 	public bool autoExpant { get; set; }
 	public Transform container { get; set; }
 	private List<T> pool;
-
 	public PoolMono(T prefab, int count, Transform transform)
 	{
 		this.prefab = prefab;
+		container = transform;
+		CreatePool(count);
+	}
+	public PoolMono(T[] prefabs, int count, Transform transform)
+	{
+		this.prefabs = prefabs;
 		container = transform;
 		CreatePool(count);
 	}
@@ -27,10 +33,22 @@ public class PoolMono<T> where T : MonoBehaviour
 	}
 	private T CreateObject(bool isActivebyDefault = false)
 	{
-		var createdObject = UnityEngine.Object.Instantiate(prefab, container);
-		createdObject.gameObject.SetActive(isActivebyDefault);
-		pool.Add(createdObject);
-		return createdObject;
+		
+		if (prefabs != null)
+		{
+			var createdObject = GameObject.Instantiate(prefabs[UnityEngine.Random.Range(0, prefabs.Length)], container);
+			createdObject.gameObject.SetActive(isActivebyDefault);
+			pool.Add(createdObject);
+			return createdObject;
+		}
+		else
+		{
+			var createdObject = GameObject.Instantiate(prefab, container);
+			createdObject.gameObject.SetActive(isActivebyDefault);
+			pool.Add(createdObject);
+			return createdObject;
+		}
+
 	}
 
 	public bool HasFreeElement(out T element)

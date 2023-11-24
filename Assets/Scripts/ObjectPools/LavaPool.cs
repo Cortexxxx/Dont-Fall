@@ -15,11 +15,7 @@ public class LavaPool : Pool
 	protected override void Update()
 	{
 		base.Update();
-		if (lastSpawnTime + cooldowns[(int)LevelManager.Instance.difficulty] < Time.time && isActive && isStarted)
-		{
-			lastSpawnTime = Time.time;
-			CreateLava();
-		}
+
 		if (!isActive)
 		{
 			var lavas = pool.GetAllElements();
@@ -33,7 +29,8 @@ public class LavaPool : Pool
 			enabled = false;
 		}
 	}
-	private void CreateLava()
+
+	protected override void CreateObject()
 	{
 		// sideLength = Width of the scene devided 2. It is the area where objects can spawn
 		var lava = pool.GetFreeElement();
@@ -58,12 +55,12 @@ public class LavaPool : Pool
 				break;
 			case 3:
 				spawnPosition = new Vector3(Random.Range(-platformSize.x / 2, platformSize.x / 2), -5, platformSize.x + 5); // +z
-				forceDirection = new Vector3(0, forceDirection.y , -forceDirection.z);
+				forceDirection = new Vector3(0, forceDirection.y, -forceDirection.z);
 				rb.GetComponent<Animator>().SetFloat("Angle", 90);
 
 				break;
 			case 4:
-				spawnPosition = new Vector3(Random.Range(-platformSize.x / 2, platformSize.x / 2) , -5, -platformSize.x - 5); // -z
+				spawnPosition = new Vector3(Random.Range(-platformSize.x / 2, platformSize.x / 2), -5, -platformSize.x - 5); // -z
 				forceDirection = new Vector3(0, forceDirection.y, forceDirection.z);
 				rb.GetComponent<Animator>().SetFloat("Angle", 270);
 

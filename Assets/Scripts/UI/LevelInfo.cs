@@ -8,9 +8,11 @@ public class LevelInfo : MonoBehaviour
 {
 	private Dictionary<string, string> levelInfo = new Dictionary<string, string>()
 	{
-		{"rockyforest", "Остерегайся падающих камней и собирай монеты!"},
-		{"sandyvalley", "Остерегайся летящих перекати-полей и собирай монеты!"},
-		{"lavaland", "Остерегайся лавы и собирай монеты!"}
+		{"rockyforest", "В окрестностях произошёл обвал с гор. Остерегайся падающих камней!"},
+		{"sandyvalley", "Сегодня слишком ветренно. Берегись летящих перекати-полей"},
+		{"lavaland", "Неподалёку началось извержение вулкана. Остререгайся лавовых сфер!"},
+		{"snowyhills", "Берегись! Эти турели стреляют снежками!"},
+		{"cityflow", "Эти водители хотят тебя сбить. Будь осторожен! "}
 	};
 	private void Start()
 	{
@@ -23,6 +25,5 @@ public class LevelInfo : MonoBehaviour
 	{
 		yield return new WaitForSeconds(5);
 		gameObject.SetActive(false);
-		Debug.Log("setinactive");
 	}
 }
